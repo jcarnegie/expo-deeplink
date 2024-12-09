@@ -1,17 +1,25 @@
 {
   "expo": {
-    "name": "expo-deeplinking",
-    "slug": "expo-deeplinking",
+    "name": "expo-deeplink",
+    "slug": "expo-deeplink",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "rhino",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.expodeeplink"
     },
     "android": {
+      "package": "com.example.expodeeplink",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
