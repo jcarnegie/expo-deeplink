@@ -38,6 +38,9 @@ npx uri-scheme open rhino://categories/electronics --android
 
 # Open specific product
 npx uri-scheme open rhino://categories/electronics/123 --android
+
+# Open specific product with color
+npx uri-scheme open 'rhino://categories/electronics/123?color=red' --android
 ```
 
 ## Implementation Details

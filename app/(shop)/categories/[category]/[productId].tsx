@@ -2,12 +2,13 @@ import { View, Text, StyleSheet } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 
 export default function ProductDetailScreen() {
-  const { category, productId } = useLocalSearchParams();
+  const { category, color, productId } = useLocalSearchParams();
 
   return (
     <View style={styles.container}>
       <Text style={styles.category}>Category: {category}</Text>
       <Text style={styles.productId}>Product ID: {productId}</Text>
+      <Text style={styles.productId}>Color: {color}</Text>
       <Text style={styles.description}>
         This is a nested route accessed via deep linking!{'\n\n'}
         Try these deep link formats:{'\n'}
